@@ -1,0 +1,42 @@
+
+Parent network: 128.98.0.0/17
+
+Network requirements: 
+10 location => We would need at least 4 subnet bits. (2^4 = 16 > 10)
+1200 devices => We would need at least 11 host bits.  ( 2^11 = 2048> 1200)
+
+The internal/subnet mask is /21 it has 4 subnet bits and 11 host bits.  
+=> Requirements met
+
+Subnet gap = 256 - 248 = 8
+
+
+Subnet plan:
+
+SN0:  128.98.0.0       128.98.0.1  to 128.98.7.2ca54          128.98.7.255
+SN1:  128.98.8.0       128.98.8.1  to 128.98.15.254         128.98.15.255
+SN2:  128.98.16.0      128.98.16.1 to 128.98.23.254      128.98.23.255
+...
+SN10: 128.98.80.0   128.98.80.1 to 128.98.87.254       128.98.87.255
+
+
+I am asked to use subnet 10 for addressing
+
+
+SN10: 128.98.80.1 to 128.98.87.254
+
+
+Router Pool: 128.98.80.1 and 128.98.80.2
+Server Pool: 128.98.80.3  to 128.98.80.22
+Printers: 128.98.80.23  to 128.98.80.42
+Static Workstation : 128.98.80.43  to 128.98.80.62
+
+Workstation DHCP Pool: 128.98.80.63  to 128.98.80.254
+
+
+IP Domain Controller: 128.98.80.3
+IP Client: 128.98.80.43
+Default Gateway: 128.98.80.1
+
+Evidence of IP Config
+Evidence of OUs
