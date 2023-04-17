@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering Page</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+
+    <header>
+        <div>
+            <img id="logo" src="images/logo2.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a id="current" href="order.html">Order</a></li>
+                <li><a href="feature.html">Feature</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Ordering Form</h1>
+        <form id="ordform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+            <div class="form">
+                <div>
+                    <h3>Please fill in your information </h3>
+                </div>
+                <div class="textinput">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="phonenumber">Number:</label><br>
+                    <input type="text" id="phonenumber" name="phonenumber"><br>
+                    <h3>Choose your Delivery method</h3>
+                </div>
+                <div class="radiopick">
+                    <input type="radio" id="delivery" name="delivery" value="delivery">
+                    <label for="delivery">Delivery</label>
+                    <input type="radio" id="pickup" name="delivery" value="pickup">
+                    <label for="pickup">Pick Up</label><br>
+                </div>
+                <div class="pickups">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" value=""><br>
+                </div>
+                <div class="payment">
+                    <h3>Choose your payment method</h3>
+                    <input type="radio" id="visa" name="method" value="Visa">
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="mastercard" name="method" value="mastercard">
+                     <label for="mastercard">Mastercard</label><br>
+                    <input type="radio" id="AE" name="method" value="AE">
+                     <label for="AE">American Express</label><br>
+                </div><br>
+                <div>
+                    <table>
+                        <tr>
+                            <td><input type="text" id="cardnumber" placeholder="Card number"></td>
+                            <td><input type="text" id="exdate" placeholder="Expire date"></td>
+                            <td><input type="text" id="cvv" placeholder="CVV"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="namecard" placeholder="Card holder name"></td>
+                            <td><input type="text" id="billingaddress" placeholder="Billing address"> </td>
+                            <td><input type="checkbox" id="box">
+                                <label for="box">Same as address</label>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+
+        <div class="icons">
+            <div>Follow us for more information</div>
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/insta.jpg" alt="instagram">
+            <img src="images/Twitter.png" alt="twitter">
+        </div>
+        <div class="footer">
+            <ul class="footer">
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Term of Use</a></li>
+                <li><a href="">Cookies and Ads</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
