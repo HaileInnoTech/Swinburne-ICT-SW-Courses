@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Core2</string>
+
+    <string name="start">Click to View</string>
+    <string name="title">My Background</string>
+
+    <string name="dalat">Da Lat</string>
+    <string name="trian">Tri An Lake</string>
+    <string name="landmark">Land Mark 81</string>
+    <string name="conheo">Pig Hill</string>
+
+    <string name="title1">Main_Activity</string>
+    <string name="title2">Second_Activity</string>
+
+</resources>

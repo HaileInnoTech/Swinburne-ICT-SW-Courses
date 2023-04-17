@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Core 1</string>
+    <string name="intval">0</string>
+    <string name="Increase">Ghi</string>
+    <string name="Decrease">Cướp</string>
+    <string name="Reset">Làm mới</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/SCREEN"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/vlocation"
+        android:layout_width="410dp"
+        android:layout_height="307dp"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/vname"
+        style="@style/TEXT"
+        android:layout_width="167dp"
+        android:layout_height="125dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vlocation"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="162dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/vcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/TEXT"
+
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/vcheck_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TEXT"
+
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/vrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="0"
+            android:scaleX=".9"
+            android:scaleY=".9"
+            android:stepSize="1" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">W03-Calculations</string>
+    <string name="equals">Bằng</string>
+    <string name="result">Kết quả</string>
+    <string name="language">Đổi ngôn ngữ</string>
+    <string name="plus">Cộng</string>
+    <string name="toast"> Đã đổi ngôn ngữ</string>
+
+</resources>

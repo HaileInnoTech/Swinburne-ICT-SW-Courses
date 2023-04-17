@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Core 1</string>
+    <string name="intval">0</string>
+    <string name="Increase">Score</string>
+    <string name="Decrease">Steal</string>
+    <string name="Reset">Reset</string>
+</resources>
